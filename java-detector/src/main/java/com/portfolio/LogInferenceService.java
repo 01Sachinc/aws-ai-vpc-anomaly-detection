@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * LogInferenceService - Professional AI Anomaly Detection Engine
  * 
- * @author Sachin
+ * @author Sachin C S
  */
 public class LogInferenceService {
 
