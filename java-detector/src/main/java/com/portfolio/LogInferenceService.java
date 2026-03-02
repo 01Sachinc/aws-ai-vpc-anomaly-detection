@@ -2,15 +2,14 @@ package com.portfolio;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import software.amazon.awssdk.regions.Region;
-import software.amazon.awssdk.services.s3.S3Client;
-import software.amazon.awssdk.services.s3.model.GetObjectRequest;
-import software.amazon.awssdk.services.s3.model.PutObjectRequest;
-
 import java.io.*;
-import java.nio.file.Paths;
 import java.util.*;
 
+/**
+ * LogInferenceService - Professional AI Anomaly Detection Engine
+ * 
+ * @author Sachin
+ */
 public class LogInferenceService {
 
     private static final String BUCKET_NAME = "prod-log-analytics-storage";
@@ -53,7 +52,7 @@ public class LogInferenceService {
         List<String[]> lines = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String header = br.readLine(); // skip header
+            br.readLine(); // skip header
             String line;
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");

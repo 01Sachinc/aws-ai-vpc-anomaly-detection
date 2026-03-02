@@ -134,4 +134,4 @@ The system uses a **Java-based Statistical Detector**. It calculates the Mean an
 
 ## 📜 License
 
-MIT License. Created by [Your Name] for Portfolio.
+MIT License. Created by **Sachin** for Portfolio.
